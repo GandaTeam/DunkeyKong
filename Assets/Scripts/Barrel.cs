@@ -25,6 +25,7 @@ public class Barrel : MonoBehaviour {
 	private Collider2D rb;
 	private bool isWild;
 	private bool islessWild;
+	public bool downItgoes;
 
 	void Start () {
 		rb = GetComponent<Collider2D> ();
@@ -32,6 +33,9 @@ public class Barrel : MonoBehaviour {
 	
 
 	void Update () {
+		if (downItgoes == true) {
+			Debug.Log ("going places!");
+		}
 //			currentPos = transform.position;
 //
 //			lerpfactor += Time.deltaTime* lerpspeed;
@@ -41,7 +45,6 @@ public class Barrel : MonoBehaviour {
 
 	void Ontrigger2D(Collider2D other) {
 		if(other.CompareTag ("ladder")){
-			Debug.Log ("triggered");
 			randomladder = Random.Range (randMinforladder,randMaxforladder);
 		}
 		if(randomladder < descendLadder) {
