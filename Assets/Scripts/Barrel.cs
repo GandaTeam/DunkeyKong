@@ -55,7 +55,9 @@ public class Barrel : MonoBehaviour {
 		}
 
 		void OnColliderExit (Collider2D other){
+		if(other.CompareTag ("ladder")){
 		rb.enabled = true;
+		}
 		}
 
 	void BarrelType() {
