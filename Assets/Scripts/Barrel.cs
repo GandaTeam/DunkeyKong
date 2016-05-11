@@ -37,11 +37,13 @@ public class Barrel : MonoBehaviour {
 //			lerpfactor += Time.deltaTime* lerpspeed;
 //			lerpMovement = Vector2.Lerp (currentPos,destination,lerpfactor);
 //			transform.position = lerpMovement;
+		//Debug.Log (randomBarrel);
+		//Debug.Log (randomladder);
 	}
 
-	void OnCollider(Collider2D other) {
+	void OnTrigger(Collider2D other) {
 		if(other.CompareTag ("ladder")){
-			
+			Debug.Log ("triggered");
 			randomladder = Random.Range (randMinforladder,randMaxforladder);
 		}
 		if(randomladder < descendLadder) {
@@ -54,7 +56,7 @@ public class Barrel : MonoBehaviour {
 				}
 		}
 
-		void OnColliderExit (Collider2D other){
+		void OnTriggerExit (Collider2D other){
 		if(other.CompareTag ("ladder")){
 		rb.enabled = true;
 		}
