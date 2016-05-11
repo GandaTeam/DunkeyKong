@@ -1558,9 +1558,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.69}
+  m_Offset: {x: 0, y: -0.82}
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.86}
+  m_Size: {x: 0.4, y: 0.77286816}
 --- !u!114 &958589127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1572,6 +1572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b867274b33c154bfdaff7dec6a315c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  singleHazard: 100
+  doubleHazard: 300
+  tripleHazard: 800
+  player: {fileID: 1362609155}
 --- !u!1001 &972528976
 Prefab:
   m_ObjectHideFlags: 0
@@ -1703,9 +1707,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 983317826}
-  m_Layer: 0
+  - 61: {fileID: 983317827}
+  m_Layer: 10
   m_Name: FireBall
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1721,8 +1726,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1178288828}
-  m_Father: {fileID: 1684143147}
-  m_RootOrder: 7
+  m_Father: {fileID: 1833071835}
+  m_RootOrder: 0
+--- !u!61 &983317827
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983317825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -3.617659, y: -3.988595}
+  serializedVersion: 2
+  m_Size: {x: 0.5177851, y: 0.50953263}
 --- !u!1 &1065047650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1916,7 @@ GameObject:
   - 33: {fileID: 1178288831}
   - 64: {fileID: 1178288830}
   - 23: {fileID: 1178288829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2290,6 +2309,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
+  grounded: 0
 --- !u!114 &1362609161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2930,7 +2950,7 @@ Transform:
   - {fileID: 1653395440}
   - {fileID: 2045373651}
   - {fileID: 376448982}
-  - {fileID: 983317826}
+  - {fileID: 1833071835}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1001 &1707381554
@@ -3303,6 +3323,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 144468024}
   m_GameObject: {fileID: 1823261351}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1833071834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1833071835}
+  m_Layer: 10
+  m_Name: FireBalls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1833071835
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1833071834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 983317826}
+  m_Father: {fileID: 1684143147}
+  m_RootOrder: 7
 --- !u!1 &1834868679
 GameObject:
   m_ObjectHideFlags: 0

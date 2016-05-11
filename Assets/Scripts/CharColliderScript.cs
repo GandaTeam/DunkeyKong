@@ -16,10 +16,13 @@ public class CharColliderScript : MonoBehaviour
 	private float climbVelocity;
 	private float gravityStore;
 	private bool onLadder;
+	private bool isAlive;
 
 	// Use this for initialization
 	void Start () 
 	{
+		isAlive = true;
+
 		playerRigidbody = GetComponent<Rigidbody2D> ();
 		charCollider = GetComponent<CircleCollider2D> ();
 		gravityStore = playerRigidbody.gravityScale;
@@ -44,6 +47,7 @@ public class CharColliderScript : MonoBehaviour
 
 			charCollider.enabled = true;
 		}
+		Debug.Log (score);
 	}
 
 	void OnTriggerEnter2D (Collider2D other) 
@@ -51,6 +55,11 @@ public class CharColliderScript : MonoBehaviour
 		if (other.CompareTag ("ladder")) 
 		{
 			onLadder = true;
+		}
+
+		if (other.CompareTag ("Fire") || other.CompareTag("Barrel")) 
+		{
+			isAlive = false;
 		}
 	}
 

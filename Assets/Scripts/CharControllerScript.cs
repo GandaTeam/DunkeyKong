@@ -9,11 +9,11 @@ public class CharControllerScript : MonoBehaviour
 	public float jumpforce = 190f;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
+	public bool grounded = false;
 
 	// PRIVATE
 
 	private bool facingRight = true;
-	private bool grounded = false;
 	private float groundRadius = 0.2f;
 
 	void FixedUpdate () 
