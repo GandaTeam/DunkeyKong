@@ -7,6 +7,7 @@ public class CharColliderScript : MonoBehaviour
 	// PUBLIC
 
 	public float climbSpeed;
+	public int score;
 
 	// PRIVATE
 
@@ -14,7 +15,7 @@ public class CharColliderScript : MonoBehaviour
 	private CircleCollider2D charCollider;
 	private float climbVelocity;
 	private float gravityStore;
-	public bool onLadder;
+	private bool onLadder;
 
 	// Use this for initialization
 	void Start () 
