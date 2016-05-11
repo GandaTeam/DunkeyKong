@@ -219,7 +219,7 @@ GameObject:
   - 23: {fileID: 150005604}
   m_Layer: 0
   m_Name: Sledgehammer2
-  m_TagString: Untagged
+  m_TagString: Sledgehammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   - 33: {fileID: 151618476}
   - 23: {fileID: 151618475}
   - 61: {fileID: 151618474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - 61: {fileID: 173906765}
   m_Layer: 0
   m_Name: Ladder17
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +598,7 @@ GameObject:
   - 61: {fileID: 364934192}
   m_Layer: 0
   m_Name: Ladder5
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,11 +624,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06457876}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.4591548}
 --- !u!23 &364934193
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ GameObject:
   - 61: {fileID: 385970503}
   m_Layer: 0
   m_Name: Ladder16
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,11 +730,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.000000059604645}
+  m_Offset: {x: 0, y: 0.16183217}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.9636612}
 --- !u!23 &385970504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -811,6 +811,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 193e135ef46a54ad8ae1b700e3e968e1, type: 2}
+    - target: {fileID: 131416, guid: b155b12282df54dce948f5fe3fc84510, type: 2}
+      propertyPath: m_TagString
+      value: Sledgehammer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b155b12282df54dce948f5fe3fc84510, type: 2}
   m_IsPrefabParent: 0
@@ -827,7 +831,7 @@ GameObject:
   - 61: {fileID: 412353215}
   m_Layer: 0
   m_Name: Ladder11
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -839,7 +843,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412353213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: 0.74, z: 0}
+  m_LocalPosition: {x: -1.52, y: 0.74, z: 0}
   m_LocalScale: {x: 0.4, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1126121209}
@@ -853,11 +857,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.000000059604645}
+  m_Offset: {x: 0, y: 0.08887119}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.4977417}
 --- !u!23 &412353216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -958,7 +962,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 440955678}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1012,7 +1016,7 @@ GameObject:
   - 61: {fileID: 447799212}
   m_Layer: 0
   m_Name: Ladder19
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1038,11 +1042,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.09517611}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.7303518}
 --- !u!23 &447799213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1084,9 +1088,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 511550462}
+  - 61: {fileID: 511550463}
   m_Layer: 0
   m_Name: BrokenLadder4
-  m_TagString: Untagged
+  m_TagString: BrokenLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1105,6 +1110,20 @@ Transform:
   - {fileID: 546290893}
   m_Father: {fileID: 1126121209}
   m_RootOrder: 10
+--- !u!61 &511550463
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511550461}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.75, y: 1.97}
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 1.16}
 --- !u!1 &526819685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1137,7 @@ GameObject:
   - 61: {fileID: 526819687}
   m_Layer: 0
   m_Name: Ladder3
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1131,7 +1150,7 @@ Transform:
   m_GameObject: {fileID: 526819685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.99, y: -3.23, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.69, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 1126121209}
   m_RootOrder: 1
@@ -1144,11 +1163,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -0.0000009536743, y: 0}
+  m_Offset: {x: -0.0000011920929, y: 0.26000056}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.4940647}
 --- !u!23 &526819688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1218,7 +1237,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 546290892}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1272,7 +1291,7 @@ GameObject:
   - 61: {fileID: 586222617}
   m_Layer: 0
   m_Name: Ladder8
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1298,11 +1317,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.08940846}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.3588163}
 --- !u!23 &586222618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1458,7 +1477,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681719574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1542,6 +1561,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e09fd88289646434b8cd0262c673276d, type: 2}
+    - target: {fileID: 6176278, guid: 70e0dd0713f0a44f1808ee7bc19ddd39, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70e0dd0713f0a44f1808ee7bc19ddd39, type: 2}
   m_IsPrefabParent: 0
@@ -1654,9 +1677,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1065047651}
+  - 61: {fileID: 1065047652}
   m_Layer: 0
   m_Name: BrokenLadder2
-  m_TagString: Untagged
+  m_TagString: BrokenLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,6 +1699,20 @@ Transform:
   - {fileID: 440955679}
   m_Father: {fileID: 1126121209}
   m_RootOrder: 4
+--- !u!61 &1065047652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065047650}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -2.13, y: -0.53}
+  serializedVersion: 2
+  m_Size: {x: 0.44, y: 1.87}
 --- !u!1 &1096302426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1724,7 @@ GameObject:
   - 33: {fileID: 1096302430}
   - 23: {fileID: 1096302429}
   - 61: {fileID: 1096302428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1737,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096302426}
-  m_LocalRotation: {x: 0, y: 0, z: 0.010297261, w: 0.999947}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0061147376, w: 0.99998134}
   m_LocalPosition: {x: -0.17, y: 1.33, z: 0}
   m_LocalScale: {x: 9.71, y: 0.33, z: 1}
   m_Children: []
@@ -1910,7 +1948,7 @@ GameObject:
   - 61: {fileID: 1288250637}
   m_Layer: 0
   m_Name: Ladder4
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1922,8 +1960,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1288250635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.98, y: -1.96, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.75, z: 1}
+  m_LocalPosition: {x: -3.98, y: -2.021, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.81562495, z: 1}
   m_Children: []
   m_Father: {fileID: 1126121209}
   m_RootOrder: 2
@@ -1936,11 +1974,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -0.0000009536743, y: 0}
+  m_Offset: {x: -0.0000011920929, y: 0.16237149}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.5547438}
 --- !u!23 &1288250638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1982,7 +2020,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1342184221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2019,7 +2057,7 @@ GameObject:
   - 33: {fileID: 1344425137}
   - 23: {fileID: 1344425136}
   - 61: {fileID: 1344425135}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2032,7 +2070,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344425133}
-  m_LocalRotation: {x: 0, y: 0, z: -0.017190648, w: 0.99985224}
+  m_LocalRotation: {x: 0, y: 0, z: -0.006192065, w: 0.99998087}
   m_LocalPosition: {x: -0.1648645, y: -2.6174507, z: 0}
   m_LocalScale: {x: 10.16, y: 0.32999995, z: 1}
   m_Children: []
@@ -2085,6 +2123,129 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344425133}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1362609155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1362609158}
+  - 212: {fileID: 1362609157}
+  - 50: {fileID: 1362609156}
+  - 58: {fileID: 1362609159}
+  - 114: {fileID: 1362609160}
+  - 114: {fileID: 1362609161}
+  m_Layer: 8
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &1362609156
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1.3
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &1362609157
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 9f5ab0765044f5e419c6e8dbf5909c4a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!4 &1362609158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: -3.77, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1491280744}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!58 &1362609159
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.01, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
+--- !u!114 &1362609160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58425532f1e07f240b45c355cda1ca6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 3
+  jumpforce: 190
+  groundCheck: {fileID: 1491280744}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!114 &1362609161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362609155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdf751dfe53f4449824901a42c96a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbSpeed: 1
 --- !u!1 &1435919708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +2262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1435919709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2145,7 +2306,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1459911298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,7 +2320,7 @@ GameObject:
   - 61: {fileID: 1459911300}
   m_Layer: 0
   m_Name: Ladder18
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2223,6 +2384,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459911298}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1491280743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1491280744}
+  m_Layer: 8
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491280744
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491280743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.309, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1362609158}
+  m_RootOrder: 0
 --- !u!1 &1504075303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,7 +2424,7 @@ GameObject:
   - 61: {fileID: 1504075305}
   m_Layer: 0
   m_Name: Ladder10
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2262,11 +2450,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0000009536743, y: -0.00000011920929}
+  m_Offset: {x: 0.0000011920929, y: 0.21077672}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.5715513}
 --- !u!23 &1504075306
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2311,7 +2499,7 @@ GameObject:
   - 33: {fileID: 1541665397}
   - 23: {fileID: 1541665395}
   - 61: {fileID: 1541665396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2393,7 +2581,7 @@ GameObject:
   - 61: {fileID: 1610995844}
   m_Layer: 0
   m_Name: Ladder9
-  m_TagString: Untagged
+  m_TagString: ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2419,11 +2607,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.000000059604645}
+  m_Offset: {x: 0.00000059604645, y: 0.22082429}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.8816484}
 --- !u!23 &1610995845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2468,7 +2656,7 @@ GameObject:
   - 33: {fileID: 1620204662}
   - 23: {fileID: 1620204661}
   - 61: {fileID: 1620204660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2598,7 +2786,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654929417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2661,8 +2849,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684143146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2748645, y: -0.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.2748645, y: 0.19, z: 0}
+  m_LocalScale: {x: 1, y: 1.0500002, z: 1}
   m_Children:
   - {fileID: 1342184221}
   - {fileID: 1126121209}
@@ -2673,7 +2861,7 @@ Transform:
   - {fileID: 376448982}
   - {fileID: 983317826}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &1707381554
 Prefab:
   m_ObjectHideFlags: 0
@@ -2713,6 +2901,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 145190, guid: 95b811ed733504a41b17a89996907b5c, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b811ed733504a41b17a89996907b5c, type: 2}
   m_IsPrefabParent: 0
@@ -2729,7 +2921,7 @@ GameObject:
   - 23: {fileID: 1718442917}
   m_Layer: 0
   m_Name: Sledgehammer1
-  m_TagString: Untagged
+  m_TagString: Sledgehammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2802,9 +2994,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1767429952}
+  - 61: {fileID: 1767429953}
   m_Layer: 0
   m_Name: BrokenLadder1
-  m_TagString: Untagged
+  m_TagString: BrokenLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2823,6 +3016,20 @@ Transform:
   - {fileID: 2051746990}
   m_Father: {fileID: 1126121209}
   m_RootOrder: 0
+--- !u!61 &1767429953
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767429951}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -1.35, y: -3.37}
+  serializedVersion: 2
+  m_Size: {x: 0.43, y: 1.91}
 --- !u!1 &1803892347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,9 +3038,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1803892348}
+  - 61: {fileID: 1803892349}
   m_Layer: 0
   m_Name: BrokenLadder3
-  m_TagString: Untagged
+  m_TagString: BrokenLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2852,6 +3060,20 @@ Transform:
   - {fileID: 1972804789}
   m_Father: {fileID: 1126121209}
   m_RootOrder: 9
+--- !u!61 &1803892349
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803892347}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 3, y: 0.66}
+  serializedVersion: 2
+  m_Size: {x: 0.39, y: 1.63}
 --- !u!1 &1815893710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +3111,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 972528976}
   m_GameObject: {fileID: 1815893710}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3096,7 +3318,7 @@ GameObject:
   - 33: {fileID: 1846996108}
   - 23: {fileID: 1846996107}
   - 61: {fileID: 1846996106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3109,7 +3331,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846996104}
-  m_LocalRotation: {x: 0, y: 0, z: -0.019459195, w: 0.99981064}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0077245478, w: 0.9999702}
   m_LocalPosition: {x: -0.59, y: 2.37, z: 0}
   m_LocalScale: {x: 9.71, y: 0.33000004, z: 1}
   m_Children: []
@@ -3179,7 +3401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1850927135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3248,7 +3470,7 @@ RectTransform:
   m_Children:
   - {fileID: 977801303}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3290,7 +3512,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911836950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3367,7 +3589,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972804788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3623,7 +3845,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2051746989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3750,7 +3972,7 @@ GameObject:
   - 33: {fileID: 2064261499}
   - 23: {fileID: 2064261498}
   - 61: {fileID: 2064261497}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ramp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3763,8 +3985,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064261495}
-  m_LocalRotation: {x: 0, y: 0, z: -0.025828004, w: 0.9996664}
-  m_LocalPosition: {x: -0.67, y: 0.17, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.010891828, w: 0.9999407}
+  m_LocalPosition: {x: -0.67, y: 0.17000002, z: 0}
   m_LocalScale: {x: 9.71, y: 0.33, z: 1}
   m_Children: []
   m_Father: {fileID: 1342184221}
