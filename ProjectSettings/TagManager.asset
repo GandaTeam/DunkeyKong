@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BrokenLadder
   - ladder
+  - Sledgehammer
+  - Barrel
   layers:
   - Default
   - TransparentFX
