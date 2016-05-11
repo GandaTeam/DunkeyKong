@@ -41,7 +41,7 @@ public class Barrel : MonoBehaviour {
 		//Debug.Log (randomladder);
 	}
 
-	void OnTrigger(Collider2D other) {
+	void OnTrigger2D(Collider2D other) {
 		if(other.CompareTag ("ladder")){
 			Debug.Log ("triggered");
 			randomladder = Random.Range (randMinforladder,randMaxforladder);
