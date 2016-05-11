@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Barrel : MonoBehaviour {
 	//randomizers
@@ -27,6 +28,10 @@ public class Barrel : MonoBehaviour {
 	private bool islessWild;
 	public bool downItgoes;
 
+
+	//input da ladder,
+
+	public LadderDrop ladropInput;
 	void Start () {
 		rb = GetComponent<Collider2D> ();
 	}
@@ -88,5 +93,7 @@ public class Barrel : MonoBehaviour {
 				}
 	}
 
-
+	void Drop () {
+		rb.enabled = false;
+	}
 }
