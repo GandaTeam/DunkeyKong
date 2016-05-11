@@ -11,14 +11,16 @@ public class CharColliderScript : MonoBehaviour
 	// PRIVATE
 
 	private Rigidbody2D playerRigidbody;
+	private CircleCollider2D charCollider;
 	private float climbVelocity;
 	private float gravityStore;
-	private bool onLadder;
+	public bool onLadder;
 
 	// Use this for initialization
 	void Start () 
 	{
 		playerRigidbody = GetComponent<Rigidbody2D> ();
+		charCollider = GetComponent<CircleCollider2D> ();
 		gravityStore = playerRigidbody.gravityScale;
 	}
 
@@ -31,11 +33,15 @@ public class CharColliderScript : MonoBehaviour
 			climbVelocity = climbSpeed * Input.GetAxisRaw ("Vertical");
 
 			playerRigidbody.velocity = new Vector2 (playerRigidbody.velocity.x, climbVelocity);
+
+			charCollider.enabled = false;
 		}
 
 		if (!onLadder) 
 		{
 			playerRigidbody.gravityScale = gravityStore;
+
+			charCollider.enabled = true;
 		}
 	}
 
