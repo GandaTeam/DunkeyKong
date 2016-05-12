@@ -27,7 +27,8 @@ public class LadderDrop : MonoBehaviour {
 		Debug.Log ("triggered");
 		Debug.Log (other.gameObject.name); 
 		descend = true;
-		other.GetComponent<Barrel> ().downItgoes=true;
+		other.GetComponent<Barrel> ().Drop ();
+		Debug.Log (other.GetComponent<Barrel>().randomladder);
 		if (isLeft) {
 			other.GetComponent<Barrel> ().isleft=true;
 		}
@@ -48,7 +49,7 @@ public class LadderDrop : MonoBehaviour {
 			Debug.Log ("triggered");
 			randomladder = Random.Range (randMinforladder,randMaxforladder);
 		}
-		if(randomladder < descendLadder) {
+		if(randomladder <= descendLadder) {
 			
 			Debug.Log ("down it goes!!!");
 		}

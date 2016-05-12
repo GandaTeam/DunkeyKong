@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Barrel : MonoBehaviour {
 	//randomizers
-	private int randomladder;
+	public int randomladder;
 	private int randomBarrel;
 	private int randMaxforladder=6;
 	private int randMinforladder=0;
@@ -46,54 +46,18 @@ public class Barrel : MonoBehaviour {
 		if (downItgoes == true && isleft) {
 			Debug.Log ("going places!");
 			rb.isTrigger = true;
-			rbk.AddForceAtPosition (Vector2.left*rbkfactor,currentpos);
+			rbk.AddForceAtPosition (Vector2.left * rbkfactor, currentpos);
 		}
 		if (downItgoes == true && isleft == false) {
 			Debug.Log ("going places!");
 			rb.isTrigger = true;
-			rbk.AddForceAtPosition (Vector2.right*rbkfactor,currentpos);
+			rbk.AddForceAtPosition (Vector2.right * rbkfactor, currentpos);
 		}
 		if (downItgoes == false) {
 			rb.isTrigger = false;
 		}
-//			currentPos = transform.position;
-//
-//			lerpfactor += Time.deltaTime* lerpspeed;
-//			lerpMovement = Vector2.Lerp (currentPos,destination,lerpfactor);
-//			transform.position = lerpMovement;
 	}
 
-	void Ontrigger2D(Collider2D other) {
-		if(other.CompareTag ("ladder")){
-			randomladder = Random.Range (randMinforladder,randMaxforladder);
-		}
-		if(randomladder < descendLadder) {
-			rb.enabled = false ;
-				Debug.Log ("down it goes!!!");
-				}
-				else{
-			randomladder--;
-					//watevs cool man
-				}
-		if(other.CompareTag ("brokenladder")){
-			Debug.Log ("triggered");
-			randomladder = Random.Range (randMinforladder,randMaxforladder);
-		}
-		if(randomladder < descendLadder) {
-			rb.enabled = false ;
-			Debug.Log ("down it goes!!!");
-		}
-		else{
-			randomladder--;
-			//watevs cool man
-		}
-		}
-
-		void OntriggerExit2D (Collider2D other){
-		if(other.CompareTag ("ladder")){
-		rb.enabled = true;
-		}
-		}
 
 	void BarrelType() {
 				
@@ -108,7 +72,18 @@ public class Barrel : MonoBehaviour {
 				}
 	}
 
-	void Drop () {
-		rb.enabled = false;
+	public void Drop () {
+		randomladder = Random.Range (randMinforladder,randMaxforladder);
+		if(randomladder <= descendLadder) {
+			downItgoes = true;
+			Debug.Log ("down it goes!!!");
+		}
+		else{
+			randomladder--;
+			//watevs cool man
+		}
+
 	}
+
+
 }
