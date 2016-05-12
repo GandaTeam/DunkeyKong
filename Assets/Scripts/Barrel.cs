@@ -24,22 +24,37 @@ public class Barrel : MonoBehaviour {
 //	public Vector2 currentplatform;
 //
 	private Collider2D rb;
+	private Rigidbody2D rbk;
 	private bool isWild;
 	private bool islessWild;
 	public bool downItgoes;
-
+	private Vector2 currentpos;
+	public float rbkfactor;
+	public bool isleft;
 
 	//input da ladder,
 
 	public LadderDrop ladropInput;
 	void Start () {
 		rb = GetComponent<Collider2D> ();
+		rbk	= GetComponent<Rigidbody2D> ();
 	}
 	
 
 	void Update () {
-		if (downItgoes == true) {
+		currentpos = gameObject.transform.position;
+		if (downItgoes == true && isleft) {
 			Debug.Log ("going places!");
+			rb.isTrigger = true;
+			rbk.AddForceAtPosition (Vector2.left*rbkfactor,currentpos);
+		}
+		if (downItgoes == true && isleft == false) {
+			Debug.Log ("going places!");
+			rb.isTrigger = true;
+			rbk.AddForceAtPosition (Vector2.right*rbkfactor,currentpos);
+		}
+		if (downItgoes == false) {
+			rb.isTrigger = false;
 		}
 //			currentPos = transform.position;
 //

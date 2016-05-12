@@ -10,12 +10,13 @@ public class LadderDrop : MonoBehaviour {
 	private int randMinforbarrel=0;
 	private int descendLadder= 2;
 
-	public GameObject Barrel;
-
+	public GameObject barrel;
+	public bool descend;
+	public bool isLeft;
 
 	// Use this for initialization
 	void Start () {
-
+		descend = false;
 	}
 
 	// Update is called once per frame
@@ -24,8 +25,12 @@ public class LadderDrop : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D other){
 		Debug.Log ("triggered");
-
-
+		Debug.Log (other.gameObject.name); 
+		descend = true;
+		other.GetComponent<Barrel> ().downItgoes=true;
+		if (isLeft) {
+			other.GetComponent<Barrel> ().isleft=true;
+		}
 	}
 	void Ontrigger2D(Collider2D other) {
 		if(other.CompareTag ("ladder")){
@@ -55,7 +60,7 @@ public class LadderDrop : MonoBehaviour {
 
 	void OntriggerExit2D (Collider2D other){
 		if(other.CompareTag ("ladder")){
-			rb.enabled = true;
+			
 		}
 	}
 
