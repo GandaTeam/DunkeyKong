@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class ScoreUpdate : MonoBehaviour 
 {
-	public Image life1;
-	public Image life2;
-	public Image life3;
-	public Text uiScoreText;
-	public Text uiHighScoreText;
-	public Text uiBonusScoreText;
+	public Image uilife1;
+	public Image uilife2;
+	public Image uilife3;
+	public Text uiScore;
+	public Text uiHighScore;
+	public Text uiBonusScore;
 
 	private int score;
 	private bool haslife1;
@@ -28,8 +28,23 @@ public class ScoreUpdate : MonoBehaviour
 	}
 	
 
-	void Update () 
+	void UpdateUIScore () 
 	{
-	
+		uiScore.text = score.ToString ();
 	}
+
+	private void UpdateLife()
+	{
+		uilife1.enabled = haslife1;
+		uilife2.enabled = haslife2;
+		uilife3.enabled = haslife3;
+	}
+
+	/*private void UpdateHighScore()
+	{
+	}*/
+
+	/*private void UpdateBonusScore()
+	{
+	}*/
 }
