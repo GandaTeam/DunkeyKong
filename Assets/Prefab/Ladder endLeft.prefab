@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrel: {fileID: 0}
-  descend: 1
+  isLeft: 1
 --- !u!114 &11493748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859faaa56b7e6423db6adfec4451e90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLEFT: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

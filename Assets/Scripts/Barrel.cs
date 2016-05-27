@@ -8,7 +8,7 @@ public class Barrel : MonoBehaviour {
 	private int randomBarrel;
 	private int randMaxforladder=6;
 	private int randMinforladder=0;
-	private int randMaxforbarrel=9;
+	private int randMaxforbarrel=7;
 	private int randMinforbarrel=0;
 	private int descendLadder= 2;
 
@@ -30,41 +30,69 @@ public class Barrel : MonoBehaviour {
 	public bool downItgoes;
 	private Vector2 currentpos;
 	public float rbkfactor;
-	public bool isleft;
+	public bool isleft = false;
+	public float wildonedrop;
+	public bool reset = false;
+	public float barrelspeed;
 
-	//input da ladder,
 
-	public LadderDrop ladropInput;
 	void Start () {
+		BarrelType ();
 		rb = GetComponent<Collider2D> ();
 		rbk	= GetComponent<Rigidbody2D> ();
+		if (isWild) {
+			tag.Replace ("Barrel","WildBarrel");
+			rbk.AddForceAtPosition (Vector2.down * rbkfactor* wildonedrop, currentpos);
+		}
+		if (islessWild) {
+			tag.Replace ("Barrel", "WildBarrel");
+		}
+		rbk.AddForceAtPosition (Vector2.down * rbkfactor, currentpos);
+		if (isWild == false) {
+			rbk.AddForceAtPosition (Vector2.right * rbkfactor, currentpos);
+		}
+
+
 	}
 	
 
-	void Update () {
+	void FixedUpdate () {
 		currentpos = gameObject.transform.position;
-		if (downItgoes == true && isleft) {
+		if (downItgoes == true && isleft && isWild == false) {
 			Debug.Log ("going places!");
 			rb.isTrigger = true;
-			rbk.AddForceAtPosition (Vector2.left * rbkfactor, currentpos);
+
 		}
-		if (downItgoes == true && isleft == false) {
+		if (downItgoes == true && isleft == false && isWild == false) {
 			Debug.Log ("going places!");
 			rb.isTrigger = true;
-			rbk.AddForceAtPosition (Vector2.right * rbkfactor, currentpos);
+
 		}
-		if (downItgoes == false) {
+		if (downItgoes == false && isWild == false) {
 			rb.isTrigger = false;
 		}
+		if (isWild) {
+			rb.isTrigger = true;
+		}
+		if (isleft) {
+			
+			rbk.AddRelativeForce (Vector2.left * rbkfactor);
+		} else {
+			
+			rbk.AddRelativeForce (Vector2.right * rbkfactor);
+		}
 	}
-
+			void OntriggerEnter2D (Collider2D other){
+		if (other.CompareTag ("Player")) {
+					//kill player.
+		}
+	}
 
 	void BarrelType() {
 				
 				randomBarrel = Random.Range (randMinforbarrel, randMaxforbarrel);
 		if (randomBarrel == 1) {
 			isWild = true;
-			rb.enabled = false;
 		}
 				else if (randomBarrel == 2)  {
 			islessWild = true;
@@ -77,13 +105,23 @@ public class Barrel : MonoBehaviour {
 		if(randomladder <= descendLadder) {
 			downItgoes = true;
 			Debug.Log ("down it goes!!!");
+			rbk.constraints= RigidbodyConstraints2D.FreezePositionX;
+			resetvel ();
 		}
 		else{
 			randomladder--;
 			//watevs cool man
 		}
+	
 
+	}
+	public void Releasex(){
+		rbk.constraints = RigidbodyConstraints2D.None;
+
+		}
+	public void resetvel(){
+		rbk.velocity = Vector2.zero;
+	}
 	}
 
 
-}

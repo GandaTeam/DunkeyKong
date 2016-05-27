@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LadderFloor : MonoBehaviour {
-
+	public bool isLEFT;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,8 +14,17 @@ public class LadderFloor : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D other){
 		Debug.Log ("triggered");
+		other.GetComponent<Barrel> ().Releasex ();
 		Debug.Log (other.gameObject.name); 
 		other.GetComponent<Barrel> ().downItgoes=false;
-}
+		if (isLEFT) {
+			other.GetComponent<Barrel> ().isleft=true;
+		}
+		if (isLEFT == false) {
+			other.GetComponent<Barrel> ().isleft=false;
+		}
+
+	
+		}
 
 }
